@@ -1,0 +1,10 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+
+.navbar {
+  height: ($navbar-height - (2 * $navbar-padding));
+  background-color: $red-strong;
+  color: $white-font;
+  border-bottom: 1px solid black;
+  padding: $navbar-padding;
+}

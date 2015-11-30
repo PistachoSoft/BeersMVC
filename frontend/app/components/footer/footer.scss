@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+
+.footer {
+  position: fixed;
+  background-color: $bleached-bone;
+  border-top: 1px solid black;
+  height: ($footer-height - (2 * $footer-padding))px;
+  padding: $footer-padding;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .footer-text {
+
+  }
+}

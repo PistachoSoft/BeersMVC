@@ -1,0 +1,9 @@
+@import "../../styles/sizes";
+
+.navbar {
+
+  .navbar-logo {
+    height: ($navbar-height - (2 * $navbar-padding));
+    font-size: ($navbar-height - (2 * $navbar-padding));
+  }
+}
