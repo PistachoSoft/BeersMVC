@@ -2,4 +2,16 @@
 
 .beer-browser {
   padding-bottom: $footer-height;
+  height: calc(100% - (#{$footer-height} + #{$navbar-height}));
+
+  .grid-wrapper {
+
+    &::before {
+      width: calc(100% - 40px);
+      background-color: antiquewhite;
+    }
+
+    overflow: auto;
+    height: calc(100% - #{$filter-height});
+  }
 }

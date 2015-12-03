@@ -3,28 +3,9 @@
 
   const express = require('express'),
     bodyParser = require('body-parser'),
-    host = proc.env.HOST || '127.0.0.1',
+    host = proc.env.HOST || '0.0.0.0',
     port = proc.env.PORT || 9001,
-    beers = [
-      {
-        name: 'Gulden Draak'
-      },
-      {
-        name: 'Ambar'
-      },
-      {
-        name: 'Arran'
-      },
-      {
-        name: 'Easy IPA'
-      },
-      {
-        name: 'Sink the Bismark'
-      },
-      {
-        name: 'Zwick\'l'
-      }
-    ];
+    beers = require('./data/beers.json');
 
   let app = express();
 
@@ -43,7 +24,7 @@
     }, 1000);
   });
 
-  app.listen(port, () => {
+  app.listen(port, host, () => {
     logger.log('App listening at http://%s:%s', host, port);
   });
 }(process, console));

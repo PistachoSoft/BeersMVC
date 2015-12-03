@@ -1,6 +1,6 @@
 const Config = {
   api: {
-    path: 'http://localhost:9001',
+    path: 'http://192.168.0.17:9001',
     collections: {
       beers: {
         all: '/api/collections/beers'

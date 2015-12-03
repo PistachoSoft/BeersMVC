@@ -1,13 +1,16 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+
 .filter {
 
   .filter-input {
-    width: calc(100% - 10px);
+    width: calc(100% - (2 * #{$filter-padding}));
     border: 0;
-    border-bottom: 1px solid black;
-    height: 30px;
-    padding: 5px;
+    border-bottom: $border-size solid $black-font;
+    height: $filter-height - (2 * $filter-padding) - $border-size;
+    padding: $filter-padding;
     font-size: 20px;
-    background-color: #DADADA;
+    background-color: $grey-light;
     transition: all .2s ease-out;
 
     &:hover {

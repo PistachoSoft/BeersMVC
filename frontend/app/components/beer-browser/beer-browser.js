@@ -1,9 +1,9 @@
 import React from 'react';
-import BeerView from '../beer-view/beer-view.js';
-import Filter from '../filter/filter.js';
-import Grid from '../grid/grid.js';
-import Spinner from '../spinner/spinner.js';
-import BeerService from '../../services/beer-service/beer-service.js';
+import BeerView from '../beer-view';
+import Filter from '../filter';
+import Grid from '../grid';
+import Spinner from '../spinner';
+import BeerService from '../../services/beer-service';
 import style from './beer-browser.scss';
 
 export default class BeerBrowser extends React.Component {
@@ -47,17 +47,22 @@ export default class BeerBrowser extends React.Component {
       <div className="beer-browser">
         <Filter onType={this.filterAction.bind(this)}
             placeholder={"Filter beers by name..."} />
-
-        <Grid>
-          {
-            this.state.filtered.map(function(item, index) {
-              return (
-                <BeerView key={index} data={item}/>
-              );
-            })
-          }
-        </Grid>
-        {this.state.loading ? <Spinner /> : '' }
+        {
+          this.state.loading ?
+            <Spinner />
+            :
+            <div className="grid-wrapper">
+              <Grid>
+                {
+                  this.state.filtered.map(function(item, index) {
+                    return (
+                      <BeerView key={index} data={item}/>
+                    );
+                  })
+                }
+              </Grid>
+            </div>
+        }
       </div>
     );
   }

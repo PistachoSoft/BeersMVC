@@ -1,0 +1,14 @@
+@import "../../styles/sizes";
+@import "../../styles/colors";
+
+.add-button {
+  float: right;
+  height: ($navbar-height - (2 * $navbar-padding));
+  margin-right: 10px;
+
+  font-size: ($navbar-height - (2 * $navbar-padding)) - 8px;
+
+  @media (max-width: 450px) {
+    font-size: ($navbar-height - (2 * $navbar-padding)) - 20px;
+  }
+}

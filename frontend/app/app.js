@@ -8,7 +8,7 @@ import style from './styles/main.scss';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div id="homepage">
         <Navbar />
         <BeerBrowser />
         <Footer />
