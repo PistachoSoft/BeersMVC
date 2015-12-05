@@ -10,7 +10,8 @@ export default class AddButton extends React.Component {
     return (
       <button className="button add-button"
           onClick={this.onClick.bind(this)}>
-        Add
+        <i className="fa fa-plus"></i>
+        <i className="fa fa-beer"></i>
       </button>
     );
   }

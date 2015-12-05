@@ -5,7 +5,7 @@ export default class Logo extends React.Component {
   render() {
     return (
       <button className="logo button">
-        My Beer Collection
+        Beer Collection
       </button>
     );
   }

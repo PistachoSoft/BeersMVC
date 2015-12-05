@@ -1,0 +1,23 @@
+{
+  "name": "beers-mvc",
+  "version": "1.0.0",
+  "homepage": "https://github.com/PistachoSoft/BeersMVC",
+  "authors": [
+    "David <david.recuencogadea@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower-components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  }
+}

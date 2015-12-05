@@ -4,24 +4,23 @@
 .filter {
 
   .filter-input {
-    width: calc(100% - (2 * #{$filter-padding}));
+    width: 100%;
     border: 0;
-    border-bottom: $border-size solid $black-font;
-    height: $filter-height - (2 * $filter-padding) - $border-size;
+    height: $filter-height;
     padding: $filter-padding;
     font-size: 20px;
-    background-color: $grey-light;
-    transition: all .2s ease-out;
+    box-sizing: border-box;
+    background-color: inherit;
+    transition: all .15s ease-in-out;
 
     &:hover {
-      box-shadow: 0 0 2px black inset;
-      transition: all .2s ease-out;
+      background-color: $grey-light;
     }
 
     &:focus {
-      background-color: white;
-      transition: all .2s ease-out;
       outline: none;
+      background-color: white;
+      transition: all .15s ease-in-out;
     }
   }
 }

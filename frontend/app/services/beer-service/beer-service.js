@@ -1,5 +1,5 @@
-import HttpService from '../http-service/http-service.js';
-import Config from '../../config.js';
+import HttpService from '../http-service';
+import Config from '../../config';
 
 export default class BeerService {
 

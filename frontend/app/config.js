@@ -1,9 +1,9 @@
 const Config = {
   api: {
-    path: 'http://192.168.0.17:9001',
+    path: 'http://api.beers.pistacho.moe',
     collections: {
       beers: {
-        all: '/api/collections/beers'
+        all: '/collections/beers'
       }
     }
   }

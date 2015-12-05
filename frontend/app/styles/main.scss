@@ -1,39 +1,60 @@
 @import "colors";
+@import "sizes";
 
 html, body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  min-width: 300px;
+  overflow: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #beers-mvc {
   height: 100%;
-  background-color: $red-strong;
+  background-color: $white-font;
 
   #homepage {
     height: 100%;
   }
 }
 
+.container {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  width: calc(100% - 25%);
+  height: 100%;
+  padding: 60px 0;
+  box-sizing: border-box;
+
+  @media (max-width: 450px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .button {
   padding-right: 10px;
   padding-left: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   background-color: inherit;
   border: none;
+  border-bottom: 5px solid transparent;
   font-family: inherit;
-  color: inherit;
-  transition: all .2s ease-out;
+  color: $grey-dark;
+  transition: all .15s ease-in-out;
 
   &:active, &:focus {
     outline: none;
   }
 
   &:hover {
-    background-color: #ac0c0c;
-    border-radius: 10px;
-    transition: all .2s ease-out;
+    color: $black-font;
+    border-bottom: 4px solid $black-font;
+    transition: all .15s ease-in-out;
   }
 }

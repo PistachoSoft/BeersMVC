@@ -3,7 +3,7 @@
 
 .add-button {
   float: right;
-  height: ($navbar-height - (2 * $navbar-padding));
+  height: $navbar-height;
   margin-right: 10px;
 
   font-size: ($navbar-height - (2 * $navbar-padding)) - 8px;

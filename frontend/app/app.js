@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/navbar/navbar.js';
-import Footer from './components/footer/footer.js';
-import BeerBrowser from './components/beer-browser/beer-browser.js';
+import Navbar from './components/navbar';
+import BeerBrowser from './components/beer-browser';
 import style from './styles/main.scss';
 
 class App extends React.Component {
@@ -10,8 +9,9 @@ class App extends React.Component {
     return (
       <div id="homepage">
         <Navbar />
-        <BeerBrowser />
-        <Footer />
+        <div className="container">
+          <BeerBrowser />
+        </div>
       </div>
     );
   }

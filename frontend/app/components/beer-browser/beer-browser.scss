@@ -1,17 +1,12 @@
 @import "../../styles/sizes";
 
 .beer-browser {
-  padding-bottom: $footer-height;
-  height: calc(100% - (#{$footer-height} + #{$navbar-height}));
+  height: 100%;
+  background-color: beige;
 
   .grid-wrapper {
-
-    &::before {
-      width: calc(100% - 40px);
-      background-color: antiquewhite;
-    }
-
     overflow: auto;
     height: calc(100% - #{$filter-height});
+    box-sizing: border-box;
   }
 }

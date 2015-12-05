@@ -2,12 +2,10 @@
 @import "../../styles/sizes";
 
 .navbar {
-  height: ($navbar-height - (2 * $navbar-padding) - $border-size);
-  background-color: $red-strong;
-  color: $white-font;
-  border-bottom: $border-size solid $black-font;
-  padding: $navbar-padding;
+  height: $navbar-height;
+  background-color: $white-font;
+  color: $black-font;
   float: left;
-  width: calc(100% - #{$navbar-padding});
-  user-select: none;
+  width: 100%;
+  box-sizing: border-box;
 }

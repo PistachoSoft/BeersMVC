@@ -3,7 +3,6 @@
 .spinner-outer {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
   z-index: 9000;
   height: calc(100% - #{$filter-height});
 
