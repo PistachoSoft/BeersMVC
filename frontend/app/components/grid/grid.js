@@ -7,7 +7,7 @@ export default class Grid extends React.Component {
       <div className="grid">
         <ul className="grid-list">
           {
-            this.props.children.map(function(item, index) {
+            this.props.children.map((item, index) => {
               return (
                 <li className="grid-list-item"
                     key={index}>

@@ -3,6 +3,7 @@
 .logo {
   float: left;
   height: $navbar-height;
+  line-height: ($navbar-height - (2 * $navbar-padding));
   font-size: ($navbar-height - (2 * $navbar-padding)) - 8px;
   font-weight: 700;
   margin-left: 10px;

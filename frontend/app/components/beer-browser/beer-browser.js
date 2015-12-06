@@ -18,6 +18,16 @@ export default class BeerBrowser extends React.Component {
     };
 
     BeerService.getAllBeers().then((data) => {
+      var array = data.sort((first, second) => {
+        if (first.name < second.name) {
+          return -1;
+        } else if (first.name > second.name) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+
       this.setState({
         array: data,
         filtered: data,
@@ -28,7 +38,7 @@ export default class BeerBrowser extends React.Component {
 
   filterAction(text) {
     if (text) {
-      let filtered = this.state.array.filter(function(item) {
+      let filtered = this.state.array.filter((item) => {
         return new RegExp(text.toLowerCase()).test(item.name.toLowerCase());
       });
 
@@ -52,15 +62,19 @@ export default class BeerBrowser extends React.Component {
             <Spinner />
             :
             <div className="grid-wrapper">
-              <Grid>
-                {
-                  this.state.filtered.map(function(item, index) {
-                    return (
-                      <BeerView key={index} data={item}/>
-                    );
-                  })
-                }
-              </Grid>
+              <div className="grid-wrapper-pre"></div>
+              <div className="grid-wrapper-core">
+                <Grid>
+                  {
+                    this.state.filtered.map((item, index) => {
+                      return (
+                        <BeerView key={index} data={item}/>
+                      );
+                    })
+                  }
+                </Grid>
+              </div>
+              <div className="grid-wrapper-post"></div>
             </div>
         }
       </div>

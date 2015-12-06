@@ -1,18 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router';
 import style from './add-button.scss';
 
 export default class AddButton extends React.Component {
-  onClick() {
-    console.log('Clicked!');
-  }
-
   render() {
     return (
-      <button className="button add-button"
-          onClick={this.onClick.bind(this)}>
+      <Link className="button add-button"
+          activeClassName="active"
+          to="/add">
         <i className="fa fa-plus"></i>
         <i className="fa fa-beer"></i>
-      </button>
+      </Link>
     );
   }
 }

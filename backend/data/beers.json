@@ -1,50 +1,66 @@
 [
   {
+    "id": 1,
     "name": "Gulden Draak"
   },
   {
+    "id": 2,
     "name": "Ambar"
   },
   {
+    "id": 3,
     "name": "Arran"
   },
   {
+    "id": 4,
     "name": "Easy IPA"
   },
   {
+    "id": 5,
     "name": "Sink the Bismark"
   },
   {
+    "id": 6,
     "name": "Zwick'l"
   },
   {
+    "id": 7,
     "name": "Coronita"
   },
   {
+    "id": 8,
     "name": "Heineken"
   },
   {
+    "id": 9,
     "name": "Dead Unicorn"
   },
   {
+    "id": 10,
     "name": "Putin Huilo"
   },
   {
+    "id": 11,
     "name": "Virus"
   },
   {
+    "id": 12,
     "name": "Grimbergen"
   },
   {
+    "id": 13,
     "name": "Guiness"
   },
   {
+    "id": 14,
     "name": "Paulaner"
   },
   {
+    "id": 15,
     "name": "Franziskaner"
   },
   {
+    "id": 16,
     "name": "Blue moon"
   }
 ]
