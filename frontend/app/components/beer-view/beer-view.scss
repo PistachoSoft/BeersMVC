@@ -9,6 +9,7 @@
   margin: 10px;
   background-color: white;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 0 $border-size $black-font inset;

@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import history from './history';
 import { Router, Route, IndexRoute } from 'react-router';
-import Navbar from './components/navbar';
-import BeerBrowser from './components/beer-browser';
+import { Navbar } from './components';
+import { BeerBrowser, AddBeer, ViewBeer } from './views';
 import style from './styles/main.scss';
 
 class App extends React.Component {
@@ -18,28 +19,8 @@ class App extends React.Component {
   }
 }
 
-class AddBeer extends React.Component {
-  render() {
-    return (
-      <div className="add-beers">
-        Add Beers.
-      </div>
-    );
-  }
-}
-
-class ViewBeer extends React.Component {
-  render() {
-    return (
-      <div>
-        View beer {this.props.params.id}.
-      </div>
-    );
-  }
-}
-
 ReactDOM.render((
-  <Router>
+  <Router history={history}>
     <Route path="/" component={App}>
       <IndexRoute component={BeerBrowser} />
       <Route path="add" component={AddBeer} />

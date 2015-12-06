@@ -1,9 +1,6 @@
 import React from 'react';
-import BeerView from '../beer-view';
-import Filter from '../filter';
-import Grid from '../grid';
-import Spinner from '../spinner';
-import BeerService from '../../services/beer-service';
+import { BeerView, Filter, Grid, Spinner } from '../../components';
+import { BeerService } from '../../services';
 import style from './beer-browser.scss';
 
 export default class BeerBrowser extends React.Component {
@@ -56,7 +53,7 @@ export default class BeerBrowser extends React.Component {
     return (
       <div className="beer-browser">
         <Filter onType={this.filterAction.bind(this)}
-            placeholder={"Filter beers by name..."} />
+          placeholder={"Filter beers by name..."} />
         {
           this.state.loading ?
             <Spinner />

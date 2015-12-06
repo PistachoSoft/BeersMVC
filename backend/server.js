@@ -18,7 +18,7 @@
     next();
   });
 
-  app.get('/api/collections/beers', (req, res) => {
+  app.get('/collections/beers', (req, res) => {
     setTimeout(() => {
       res.send(beers);
     }, 1000);
